@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JavaScript - read JSON from URL</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <div class="mypanel"></div>
+
+    <script>
+    $.getJSON('https://www.chromestatus.com/features_v2.json', function(data) {
+        for(var i in data){
+        var updated = data[i].updated.when;    
+        var name = data[i].name;
+		var summary = data[i].summary;
+		console.log(updated + " " + name +" " + summary);
+        }
+    });
+    </script>
+    
+</body>
+</html>

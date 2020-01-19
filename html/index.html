@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Market Changes Weekly report</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro&amp;display=swap" rel="stylesheet">
+    <style>          @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+        
+         body {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.42em;
+      color:#A7A1AE;
+      background-color:#1F2739;
+    }
+
+    h1 {
+  font-size:3em; 
+  font-weight: 300;
+  line-height:1em;
+  text-align: center;
+  color: #4DC3FA;
+}
+
+h2 {
+  font-size:1em; 
+  font-weight: 300;
+  text-align: center;
+  display: block;
+  line-height:1em;
+  padding-bottom: 2em;
+  color: #FB667A;
+}
+
+a:visited {
+  color: white;
+}
+
+a:link{
+    color:lime;
+}
+
+
+h2 a {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+.main_table th  {
+	  font-weight: bold;
+	  font-size: 1em;
+  text-align: left;
+  color: #6dce12;
+}
+
+
+.main_table td {
+	  font-weight: normal;
+	  font-size: 1em;
+    -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+	moz-box-shadow: 0 2px 2px -2px #0E1119;
+	 box-shadow: 0 2px 2px -2px #0E1119;
+}
+  .div_logo{
+      width: 50px;
+      height:  50px;   
+      margin-bottom: 20px;
+
+    background-size: 100% 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .source_title{
+    text-decoration: underline;
+}
+
+.center_logo_Chromeblog{
+    background-image :url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Chromium_11_Logo.svg/240px-Chromium_11_Logo.svg.png');
+  
+}
+
+.center_logo_Chromeblog{
+    background-image :url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Chromium_11_Logo.svg/240px-Chromium_11_Logo.svg.png');
+  
+}
+
+.center_logo_Chromestatus{
+    background-image :url('https://www.chromestatus.com/static/img/chrome_logo.svg');
+  
+}
+
+.center_logo_opera{
+    background-image :url('https://www.apnewsng.com/wp-content/uploads/2016/09/opera-mini-06-535x535.png');
+  
+}
+
+.center_logo_opera_mobile{
+background-image :url('http://1.bp.blogspot.com/-ijbpwYD-J4Y/UrfQo4bVpYI/AAAAAAAAABs/dkZWS0-IuJc/s320/Opera-Mobile-logo+(4).png');
+  
+}
+
+.center_logo_webkit{
+background-image :url('https://webkit.org/wp-content/themes/webkit/images/webkit.svg');
+ 
+}
+
+.center_logo_DevelopersGoogle
+{
+background-image :url('https://developers.google.com/web/images/web-fundamentals-icon192x192_96.png');
+ }
+
+
+.center_logo_GoogleWebmaster
+{
+background-image :url('https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png');
+ }
+
+.header{
+    text-align: center;
+    padding-top: 55px;
+}
+
+h3.header.dates{
+        text-align: center;
+        padding-top: 0px;
+        padding-bottom: 20px;
+}
+
+.center_text{
+    text-align: center;
+}
+
+.main_table{
+    text-align: left;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    display: table;
+}
+
+table{
+    border: 1px solid black;
+    display: inline-table;
+}
+
+.test-result-table {
+    border: 1px solid black;
+}
+
+.test-result-table-header-cell {
+
+    border-bottom: 1px solid black;
+    /* background-color: silver; */
+}
+
+.test-result-step-command-cell {
+    border-bottom: 1px solid gray;
+    width: fit-content;
+    
+}
+
+.main_table td {
+	  font-weight: normal;
+	  font-size: 1em;
+  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+	   -moz-box-shadow: 0 2px 2px -2px #0E1119;
+	        box-shadow: 0 2px 2px -2px #0E1119;
+}
+
+
+
+.main_table td, .main_table th {
+	  padding-bottom: 2%;
+	  padding-top: 2%;
+  padding-left:2%;  
+}
+
+/* Background-color of the odd rows */
+.main_table tr:nth-child(odd) {
+	  background-color: #323C50;
+}
+
+/* Background-color of the even rows */
+.main_table tr:nth-child(even) {
+	  background-color: #2C3446;
+}
+
+.main_table th {
+	  background-color: #1F2739;
+}
+
+.main_table td:first-child { color: #FB667A; }
+
+.main_table tr:hover {
+   background-color: #464A52;
+-webkit-box-shadow: 0 6px 6px -6px #0E1119;
+	   -moz-box-shadow: 0 6px 6px -6px #0E1119;
+	        box-shadow: 0 6px 6px -6px #0E1119;
+}
+
+.main_table td:hover {
+  background-color: #FFF842;
+  color: #403E10;
+  font-weight: bold;
+  
+  box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
+  transform: translate3d(6px, -6px, 0);
+  
+  transition-delay: 0s;
+	  transition-duration: 0.4s;
+	  transition-property: all;
+  transition-timing-function: line;
+}
+
+@media (max-width: 800px) {
+.main_table td:nth-child(4),
+.main_table th:nth-child(4) { display: none; }
+}
+
+.main_table  th.center_text {
+    text-align: center;
+}
+
+</style>
+  </head>
+  <body>
+    <h1 Class="header">Market Changes report for the last: 7 days</h1>
+    <h3 Class="header dates">2020-01-05 to 2019-12-29</h3>
+    <h2 Class="source_title">
+      <a href="http://blog.chromium.org" target="_blank">Chromeblog</a>
+    </h2>
+    <div Class="div_logo center_logo_Chromeblog"></div>
+    <table Class="main_table">
+      <thead>
+        <th Class="center_text">No Post for the last 7 days</th>
+      </thead>
+    </table>
+    <h2 Class="source_title">
+      <a href="https://www.chromestatus.com" target="_blank">Chromestatus</a>
+    </h2>
+    <div Class="div_logo center_logo_Chromestatus"></div>
+    <table Class="main_table">
+      <thead>
+        <th>Date</th>
+        <th>Summary</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td Class="test-result-step-command-cell">02/01/2020</td>
+          <td Class="test-result-step-command-cell">
+            <a href="https://www.chromestatus.com/feature/6261030015467520" target="_blank">Web NFC</a>
+          </td>
+        </tr>
+        <tr>
+          <td Class="test-result-step-command-cell">03/01/2020</td>
+          <td Class="test-result-step-command-cell">
+            <a href="https://www.chromestatus.com/feature/5691978677223424" target="_blank">Downloads as Mixed Content</a>
+          </td>
+        </tr>
+        <tr>
+          <td Class="test-result-step-command-cell">31/12/2019</td>
+          <td Class="test-result-step-command-cell">
+            <a href="https://www.chromestatus.com/feature/5687791428042752" target="_blank">HTMLVideoElement.getVideoPlaybackQuality()</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2 Class="source_title">
+      <a href="https://blogs.opera.com/mobile" target="_blank">Opera Mobile</a>
+    </h2>
+    <div Class="div_logo center_logo_opera_mobile"></div>
+    <table Class="main_table">
+      <thead>
+        <th Class="center_text">No Post for the last 7 days</th>
+      </thead>
+    </table>
+    <h2 Class="source_title">
+      <a href="https://blogs.opera.com/news" target="_blank">Opera</a>
+    </h2>
+    <div Class="div_logo center_logo_opera"></div>
+    <table Class="main_table">
+      <thead>
+        <th Class="center_text">No Post for the last 7 days</th>
+      </thead>
+    </table>
+    <h2 Class="source_title">
+      <a href="https://webkit.org/blog/feed" target="_blank">Webkit</a>
+    </h2>
+    <div Class="div_logo center_logo_webkit"></div>
+    <table Class="main_table">
+      <thead>
+        <th Class="center_text">No Post for the last 7 days</th>
+      </thead>
+    </table>
+    <h2 Class="source_title">
+      <a href="https://developers.google.com/web/updates" target="_blank">Developers Google</a>
+    </h2>
+    <div Class="div_logo center_logo_DevelopersGoogle"></div>
+    <table Class="main_table">
+      <thead>
+        <th Class="center_text">No Post for the last 7 days</th>
+      </thead>
+    </table>
+    <h2 Class="source_title">
+      <a href="http://googlewebmastercentral.blogspot.com" target="_blank">Google Webmaster</a>
+    </h2>
+    <div Class="div_logo center_logo_GoogleWebmaster"></div>
+    <table Class="main_table">
+      <thead>
+        <th Class="center_text">No Post for the last 7 days</th>
+      </thead>
+    </table>
+    <h2 Class="source_title">twitter.com/ChromeDevTools</h2>
+    <table Class="main_table">
+      <thead>
+        <th Class="center_text">No Post for the last 7 days</th>
+      </thead>
+    </table>
+    <h2 Class="source_title">
+      <a href="https://twitter.com/sindresorhus" target="_blank">twitter.com/sindresorhus</a>
+    </h2>
+    <table Class="main_table">
+      <thead>
+        <th>Date</th>
+        <th>Summary</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td Class="test-result-step-command-cell">01/01/2020</td>
+          <td Class="test-result-step-command-cell">
+            <a href="https://t.co/zjprROhsur" target="_blank">The description is here:......</a>
+          </td>
+        </tr>
+        <tr>
+          <td Class="test-result-step-command-cell">01/01/2020</td>
+          <td Class="test-result-step-command-cell">
+            <a href="https://t.co/VTiEKHxwET" target="_blank">Anyone experienced with App Store keyword SEO and wanna help improve it for Gifski? I just added both the App Store......</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2 Class="source_title">
+      <a href="https://twitter.com/codrops" target="_blank">twitter.com/codrops</a>
+    </h2>
+    <table Class="main_table">
+      <thead>
+        <th>Date</th>
+        <th>Summary</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td Class="test-result-step-command-cell">04/01/2020</td>
+          <td Class="test-result-step-command-cell">
+            <a href="https://t.co/tkKNboH3pM" target="_blank">UI Interactions &amp;amp; Animations Roundup #1
+
+Our first roundup that collects inspirational UI interactions and animatio......</a>
+          </td>
+        </tr>
+        <tr>
+          <td Class="test-result-step-command-cell">02/01/2020</td>
+          <td Class="test-result-step-command-cell">
+            <a href="https://t.co/rYeowVc8jQ" target="_blank">Web Design &amp;amp; Development News: Collective #577
+
+Flash Grid * Mix and Jam * IsoCity * MassCode * Everyone has JavaSc......</a>
+          </td>
+        </tr>
+        <tr>
+          <td Class="test-result-step-command-cell">31/12/2019</td>
+          <td Class="test-result-step-command-cell">
+            <a href="https://t.co/mamLKgyG0F" target="_blank">Here's the direct link:......</a>
+          </td>
+        </tr>
+        <tr>
+          <td Class="test-result-step-command-cell">31/12/2019</td>
+          <td Class="test-result-step-command-cell">
+            <a href="https://t.co/6kG44Adimb" target="_blank">A Look Back at 2019: Roundup of Codrops Resources
+
+Thank you to all our readers and supporters! Come and join us fo......</a>
+          </td>
+        </tr>
+        <tr>
+          <td Class="test-result-step-command-cell">30/12/2019</td>
+          <td Class="test-result-step-command-cell">
+            <a href="https://t.co/W56ba4xexH" target="_blank">Case Study: Akaru 2019 
+
+In this creative case study you will learn how the signature WebGL oil effect of the new......</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2 Class="source_title">twitter.com/ChromiumDev</h2>
+    <table Class="main_table">
+      <thead>
+        <th Class="center_text">No Post for the last 7 days</th>
+      </thead>
+    </table>
+    <h2 Class="source_title">twitter.com/FrontendDaily</h2>
+    <table Class="main_table">
+      <thead>
+        <th Class="center_text">No Post for the last 7 days</th>
+      </thead>
+    </table>
+    <h2>The days to retrieve back,email send to,twitter accounts(number of post) &amp; filters can be changed
+      <a href="https://docs.google.com/spreadsheets/d/1syTY13mkYaHtScgalwNyyvu18VM9ZPIn1u28trrbNuM/edit#gid=140982016" target="_blank">here</a>
+    </h2>
+  </body>
+</html>
