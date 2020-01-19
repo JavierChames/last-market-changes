@@ -16,8 +16,7 @@
     in order to install it in a new mahcine please install the required modules in requirements.txt
     pip install -r requirements.txt
 
-    there is also a twitter retriever(accounts configured in google sheet)
-    https://docs.google.com/spreadsheets/d/12WmWC2CMwu0wS4Ub8dJwh3dikvfK0SpWYvLyCtRhnr8/edit#gid=1531116104
+    there is also a twitter retriever(accounts configured in google sheet)   
 
     the posts(raw data) are filtered according to days & specific words(if enabled)
     the tweets from twitter are also filtered and can be configured the number of tweets to retrieve
