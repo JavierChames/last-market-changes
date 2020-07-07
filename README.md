@@ -22,4 +22,6 @@
     the tweets from twitter are also filtered and can be configured the number of tweets to retrieve
 
     finally all the data passed to module that creates and HTML page,and send it by email to recipients.
+    
+    https://htmlpreview.github.io/?https://github.com/JavierChames/last-market-changes/blob/master/html/index.html
 
